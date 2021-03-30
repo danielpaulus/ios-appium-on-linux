@@ -4,6 +4,7 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | b
 RUN export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \
      . "$NVM_DIR/nvm.sh" && nvm install 14 && \
     npm config set user 0 && npm config set unsafe-perm true && npm install -g appium
- 
-
+# 4723 appium port
+COPY startAppium.sh / 
+ENTRYPOINT ["/bin/bash","-c","/startAppium.sh"]
 
