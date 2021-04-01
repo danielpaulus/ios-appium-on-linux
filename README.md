@@ -2,7 +2,7 @@
 
 Run appium for iOS devices on Linux
 
-1. Install WebDriverAgent on your iOS device using Xcode
+1. Install WebDriverAgent on your iOS device using Xcode, then plug the device into your Linux box
 2. Install usbmuxd on your linux box `apt install usbmuxd` and run it `sudo usbmuxd&`
 3. Clone this repo on the Linux box
 4. Run: `docker build -t ios-appium-on-linux .`
