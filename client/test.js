@@ -13,6 +13,7 @@ const opts = {
 	browserName: "Safari",
 	udid: "auto",
         usePrebuiltWDA: true,
+	startIWDP: true,
         webDriverAgentUrl: "http://localhost:7777"
   }
 };
