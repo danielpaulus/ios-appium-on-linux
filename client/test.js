@@ -1,7 +1,6 @@
 // javascript
 
 const wdio = require("webdriverio");
-const assert = require("assert");
 
 const opts = {
   path: '/wd/hub',
@@ -20,7 +19,7 @@ const opts = {
 
 async function main () {
   const client = await wdio.remote(opts);
-
+  await client.url('https://google.com');
 
   await client.deleteSession();
 }
