@@ -19,8 +19,9 @@ const opts = {
 
 async function main () {
   const client = await wdio.remote(opts);
-  await client.url('https://google.com');
-
+  await client.url('https://www.youtube.com/watch?v=8v5f_ybSjHk');
+  client.pause(5000);
+  await client.activateApp( "com.apple.weather")
   await client.deleteSession();
 }
 
