@@ -7,6 +7,7 @@ const opts = {
   path: '/wd/hub',
   port: 4723,
   capabilities: {
+	deviceName: "blabla",
 	automationName: "XCUITest",
 	platformName: "iOS",
 	browserName: "Safari",
